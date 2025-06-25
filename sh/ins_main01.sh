@@ -11,7 +11,7 @@ sudo  apt-get --yes  install  git rsync
 
 
 github_catedra_user="labo-imp"
-github_install_repo="cloud-install3"
+github_install_repo="cloud-install3r"
 
 # clono el repo de instalacion
 rm -rf /home/$USER/cloud-install

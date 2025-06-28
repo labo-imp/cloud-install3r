@@ -15,6 +15,11 @@ source  /home/$USER/cloud-install/sh/common.sh
 source  /home/$USER/install/secrets.sh
 
 /home/$USER/cloud-install/direct/clonar_usuario.sh
+if [ ! $? -eq 0 ]; then
+  fecha=$(date +"%Y%m%d %H%M%S")
+  echo $fecha > /home/$USER/log/clonar_usuario_ERROR.txt
+  exit 1
+fi
 
 /home/$USER/cloud-install/sh/verificar_repo.sh
 if [ ! $? -eq 0 ]; then

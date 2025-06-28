@@ -114,6 +114,7 @@ fi
 git push  origin  catedra
 if [ ! $? -eq 0 ]; then 
   echo "Fatal Error : git push  origin  catedra "
+  echo "Fatal Error : POSIBLEMENTE  su github token es INCORRECTO "
   exit 1
 fi
 

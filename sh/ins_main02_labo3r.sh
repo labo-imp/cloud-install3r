@@ -61,6 +61,4 @@ sudo  DEBIAN_FRONTEND=noninteractive   apt-get  --yes  update
 sudo  DEBIAN_FRONTEND=noninteractive   apt-get  --yes  dist-upgrade
 sudo  DEBIAN_FRONTEND=noninteractive   apt-get  --yes  autoremove
 
-bitacora   "update upgrade"
-
 echo "Ha finalizado la parte  desatendida  de la instalacion"

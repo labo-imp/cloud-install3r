@@ -40,6 +40,11 @@ if [ ! -f /home/$USER/buckets/b1/secrets.sh ]; then
     exit 1
 fi
 
+# conversion a newline de Linux
+rm /home/$USER/buckets/b1/secrets.bak
+mv /home/$USER/buckets/b1/secrets.sh  /home/$USER/buckets/b1/secrets.bak
+perl -pe 's/\r\n|\r/\n/g'  /home/$USER/buckets/b1/secrets.bak  > /home/$USER/buckets/b1/secrets.sh
+rm /home/$USER/buckets/b1/secrets.bak
 
 
 # verificacion de los parametros de secrets.sh
